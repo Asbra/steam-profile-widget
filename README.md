@@ -14,13 +14,13 @@ Project contains 2 templates, one HTML and one image; [HTML widget](https://dev.
 * Give write permissions on `icons/` folder, game icons/images will be saved there
 
 ### GET Variables
-`debug` if set, skips cache
-`t` type of widget/output (1 = HTML, 2 = PNG image)
-`w` width (default 248px for HTML, 640px for image)
-`h` height (default 280px for HTML, 96px for image)
-`f` image file format (only PNG for now)
-`c` count of games to show (in HTML output)
-`p` Steam profile URL, ID or nick
+* `debug` if set, skips cache
+* `t` type of widget/output (1 = HTML, 2 = PNG image)
+* `w` width (default 248px for HTML, 640px for image)
+* `h` height (default 280px for HTML, 96px for image)
+* `f` image file format (only PNG for now)
+* `c` count of games to show (in HTML output)
+* `p` Steam profile URL, ID or nick
 
 ### Information
 Set GET variable `debug` if you want to skip cache.
