@@ -7,13 +7,13 @@ Project contains 2 templates, one HTML and one image; [HTML widget](https://dev.
 
 [Article/Tutorial for this project](https://asbra.net/php-steam-profile-widget/) (link to my blog)
 
-[h3]Installation[/h3]
+## Installation
 * Edit [steam-header.inc](steam-header.inc) set `$api_key` to your [Steam Web API key](https://steamcommunity.com/dev/apikey)
 * Upload to server
 * Give write permissions on `cache/` folder, .html cache will be saved there
 * Give write permissions on `icons/` folder, game icons/images will be saved there
 
-[h4]GET Variables[/h4]
+### GET Variables
 `debug` if set, skips cache
 `t` type of widget/output (1 = HTML, 2 = PNG image)
 `w` width (default 248px for HTML, 640px for image)
@@ -22,7 +22,7 @@ Project contains 2 templates, one HTML and one image; [HTML widget](https://dev.
 `c` count of games to show (in HTML output)
 `p` Steam profile URL, ID or nick
 
-[h4]Information[/h4]
+### Information
 Set GET variable `debug` if you want to skip cache.
 
 Cache is kept for 1 hour
@@ -30,6 +30,6 @@ Cache is kept for 1 hour
 [steam-header.inc](steam-header.inc) contains the Steam Web API calls
 [index.php](index.php) entry point, calls steam-header.inc to get data, handles templating
 
-[h4]Templates[/h5]
+#### Templates
 [templates](templates/) folder contains templates, here you change the appearance of the widget
 Edit `main.inc`, minify it to `main.min.inc` and it will be used. If `main.min.inc` doesn't exist, `main.inc` is used as template.
